@@ -129,8 +129,8 @@ class EditorHook(EditorHookWidget, SpyderPluginMixin):
     #------ Public API ---------------------------------------------------------
 
     # Insert text into the editor window
-    def insertText(self, text):
-      print(self.main.editor)
+    def insertText(self):
+      print(self.main.editor.get_current_editor().insert_text('synbio'))
 
 
 #===============================================================================
